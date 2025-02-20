@@ -1,0 +1,6 @@
+@GYMExersiceAPI_HostAddress = http://localhost:5076
+
+GET {{GYMExersiceAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
