@@ -42,3 +42,4 @@
 /Users/admin/RiderProjects/GYMExersiceAPI/GYMExersiceAPI/bin/Debug/net9.0/Microsoft.Extensions.DependencyModel.dll
 /Users/admin/RiderProjects/GYMExersiceAPI/GYMExersiceAPI/bin/Debug/net9.0/Mono.TextTemplating.dll
 /Users/admin/RiderProjects/GYMExersiceAPI/GYMExersiceAPI/bin/Debug/net9.0/System.CodeDom.dll
+/Users/admin/RiderProjects/GYMExersiceAPI/GYMExersiceAPI/obj/Debug/net9.0/GYMExersiceAPI.sourcelink.json
