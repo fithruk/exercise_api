@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("GYMExersiceAPI")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("ExersiceStore.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24f50edbfd9e9d512b13537efeca903336d9d444")]
-[assembly: System.Reflection.AssemblyProductAttribute("GYMExersiceAPI")]
-[assembly: System.Reflection.AssemblyTitleAttribute("GYMExersiceAPI")]
+[assembly: System.Reflection.AssemblyProductAttribute("ExersiceStore.Core")]
+[assembly: System.Reflection.AssemblyTitleAttribute("ExersiceStore.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.
