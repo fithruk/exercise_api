@@ -23,7 +23,7 @@ public class ExersiceInstructionsRepository
             );
         exStepInstructionsEntity.Id = Guid.NewGuid();
         this._context.ExersicesInstructions.Add(exStepInstructionsEntity);
-        Console.WriteLine($"Saving exStepInstructionsEntity: Id: {exStepInstructionsEntity.Id}");
+        //Console.WriteLine($"Saving exStepInstructionsEntity: Id: {exStepInstructionsEntity.Id}");
         await this._context.SaveChangesAsync();
         return exStepInstructionsEntity.Id;
     }

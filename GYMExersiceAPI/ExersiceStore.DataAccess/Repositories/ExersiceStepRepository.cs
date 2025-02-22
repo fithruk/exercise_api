@@ -23,7 +23,7 @@ public class ExersiceStepRepository
         );
        // exersiceStepEntity.Id = Guid.NewGuid();
         this._context.ExersicesSteps.Add(exersiceStepEntity);
-        Console.WriteLine($"Saving exerciseStep: {exersiceStepEntity.Id}");
+        //Console.WriteLine($"Saving exerciseStep: {exersiceStepEntity.Id}");
         await this._context.SaveChangesAsync();
         
     }

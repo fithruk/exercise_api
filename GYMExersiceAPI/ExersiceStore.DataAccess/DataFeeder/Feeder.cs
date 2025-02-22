@@ -30,24 +30,24 @@ public class Feeder
         
         if (!File.Exists(filePath))
         {
-            Console.WriteLine("File not found!");
+            //Console.WriteLine("File not found!");
             return;
         }
         
         string json = File.ReadAllText(filePath);
-        Console.WriteLine(filePath + " filePath");
+        //Console.WriteLine(filePath + " filePath");
         var exercises = JsonSerializer.Deserialize<List<Exercise>>(json);
         
         if (exercises == null || exercises.Count == 0)
         {
-            Console.WriteLine("Deserialization returned null or empty list!");
+            //Console.WriteLine("Deserialization returned null or empty list!");
             return;
         }
 
         
         foreach (var ex in exercises)
         {
-            Console.WriteLine($"Ex: {ex.ExerciseName}");
+            //Console.WriteLine($"Ex: {ex.ExerciseName}");
             Guid exersiceId = await this._exersiceRepository.createExerciseAsync(ex);
             //Guid exersiceStepId = Guid.NewGuid();
             await this._collectData(ex.Steps[0].DescriptionsRu, exersiceId);// exersiceStepId

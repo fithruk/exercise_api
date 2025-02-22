@@ -65,7 +65,7 @@ public class ExersiceRepository
             );
         exersiceEntity.Id = Guid.NewGuid();
         this._context.Exersices.Add(exersiceEntity);
-        Console.WriteLine($"Saving exercise: {exersiceEntity.ExerciseName}, Id: {exersiceEntity.Id}");
+        //Console.WriteLine($"Saving exercise: {exersiceEntity.ExerciseName}, Id: {exersiceEntity.Id}");
         await this._context.SaveChangesAsync();
         return exersiceEntity.Id;
     }

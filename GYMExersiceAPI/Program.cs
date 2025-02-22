@@ -44,19 +44,19 @@ app.MapControllers();
 
 if (app.Environment.IsDevelopment())
 {
-    //app.MapOpenApi();
     app.UseDeveloperExceptionPage();
 }
 
-//app.UseHttpsRedirection();
+app.UseHttpsRedirection();
 
-using (var scope = app.Services.CreateScope())
+Task.Run(async () =>
 {
-    var dbContext = scope.ServiceProvider.GetRequiredService<ExerciseStroreDBContext>();
-   Feeder feeder = scope.ServiceProvider.GetRequiredService<Feeder>();
-   await feeder.FeedAsync();
-   await dbContext.SaveChangesAsync();
-}
+    using var scope = app.Services.CreateScope();
+    var dataFeeder = scope.ServiceProvider.GetRequiredService<Feeder>();
+    await dataFeeder.FeedAsync();
+});
 
+
+app.MapGet("/", () => "Приложение запущено!");
 
 app.Run();
